@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PennApps Fellows is a student-run organization that pairs talented students from around the country to startups in Philadelphia for a 10-week (June 2nd to August 10th) summer internship.">
+    <meta name="description" content="PennApps Fellows is a student-run organization that pairs talented students from around the country with startups in Philadelphia for a 10-week (June 2nd to August 10th) summer internship.">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -19,20 +19,18 @@
     <link href="media/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Unlink temporarily -->
+    <!-- <link href="media/css/site.css" rel="stylesheet"> -->
 
     <style>
-    .profile-img {
+      .profile-img {
       width: 85%;
       margin: 0 auto;
       display: block;
       margin-bottom: 10px;
 
     }
-  </head>
 
-  <body>
-
-    <style>
       .btn-lg {
         line-height: 2;
         margin-bottom: 10px;
@@ -53,7 +51,8 @@
       }
 
       .row {
-        margin-bottom: 20px;
+        margin-bottom: 60px;
+        width: 100%;
       }
 
       .sponsor-item {
@@ -61,7 +60,7 @@
         display: table-cell;
         vertical-align: middle;
         max-width: 400px;
-        margin: 0 auto 30px !important;
+        margin: 0 auto 1000px !important;
       }
 
       .other-sponsors {
@@ -73,14 +72,21 @@
         width: 150px
       }
 
+      .header-img {
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+      }
+
       ul li {
         font-size: 21px;
         line-height: 1.4;
         margin: 0;
       }
-      
+
       .PressLink { color: black; }
-      
+
       @media (max-width: 992px) {
         /* Allows responsive design */
         .sponsor-item {
@@ -88,84 +94,96 @@
         }
       }
     </style>
+  </head>
+
+  <body>
 
     <!-- Full Page Image Header Area -->
     <div id="top" class="header" style = "padding-bottom: 10px; padding-top: 15px">
       <div class="vert-text">
-        <img class="img-responsive" style="display: inline-block" src="media/assets/logo-white.png" />
-
-        <h3 style="color: white;">Intern at a Philly Startup over Summer 2014</h3>
+        <img class="img-responsive" style="display: inline-block;" src="media/assets/newlogo.png">
+        <h3 class="text-stroke" style="color: white;">Philadelphia's Premiere Student-Run Fellowship Program</h3>
         <a href="#about" class="btn btn-default btn-lg header-button">More Info</a>
+        <a class="btn btn-success btn-lg header-button">Apply</a>
       </div>
     </div>
     <!-- /Full Page Image Header Area -->
 
     <!-- About -->
-    <div id="about" class="about">
-      <div class="container">
-        <div class="col-md-6 col-md-offset-3 text-center">
-          <h1>About PennApps Fellows</h1>
-          <hr/>
-          <p class="lead">
-            PennApps Fellows is a student-run organization that pairs talented students from around the country to startups in Philadelphia for a 10-week (June 2nd to August 10th) summer internship. If accepted into the program, you will work closely with a local Philly startup and partake in many of our program's features.</p>
+    <section id="about" class="about">
+      <div class="container-fluid">
+        <div class = "subheader" style = "background-color: #30cfa4">
+          <p style = "font-size: 110px; font-weight: 600; padding-top: 60px;">ABOUT</p>
+          <p style = "font-size: 40px; font-weight: 300">What we do.</p>
+        </div>
+        <div class = "row">
+          <div id = "about-descript" class = "col-md-6 col-md-offset-3 text-center">
+            <p class="lead" style = "font-size: 30px; margin-top: 1em">
+              PennApps Fellows is a student-run organization that pairs talented students from around the country with startups in Philadelphia for a 10-week (June 2nd to August 10th) summer internship. If accepted into the program, you will work closely with a local startup, get plugged into the Philly tech scene, and meet some of the coolest and brightest people in the country.</p>
+          </div>
+        </div>
+        <div class = "subheader" style = "background-color: #4bd0d2;">
+          <p style = "font-size: 110px; font-weight: 600; padding-top: 60px;">APPLY</p>
+          <p style = "font-size: 40px; font-weight: 300">Come join us.</p>
+        </div>
+        <div class = "row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <p class = "lead" style = "font-size: 30px; margin-top: 1em">
+              We're accepting applications for Summer 2015! If you love coding and meeting awesome people like yourself, we want to hear from you!
+              <br><br>
+              Get started by clicking the button below.
+              <br><br>
+            <a href="/projectphl" class="btn btn-success btn-block btn-lg">Apply</a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- /About -->
 
     <!-- Program Features -->
-    <div class="services">
-      <div class="container">
-        <div class="col-md-6 col-md-offset-3 text-center">
-          <h1>Program Features</h1>
-          <hr/>
-          <p style="font-size: 30px; text-align: center;" class="lead">
-            <ol class="fa-ul fa-2x">
-              <li><i class="fa-li fa fa-check-square-o"></i>Free Provided Housing</li>
-              <li><i class="fa-li fa fa-check-square-o"></i>Local Philly Tours</li>
-              <li><i class="fa-li fa fa-check-square-o"></i>Tech Talks</li>
-              <li><i class="fa-li fa fa-check-square-o"></i>Speaker Events</li>
-              <li><i class="fa-li fa fa-check-square-o"></i>Restaurant Outings</li>
-              <li><i class="fa-li fa fa-check-square-o"></i>Networking Opportunities</li>
-              <li><i class="fa-li fa fa-check-square-o"></i>And More</li>
-            </ol>
-          </p>
+    <section class="services">
+      <div class="container-fluid">
+        <div class = "subheader" style = "background-color: #eea35d;">
+          <p style = "font-size: 110px; font-weight: 600; padding-top: 60px;">FEATURES</p>
+          <p style = "font-size: 40px; font-weight: 300"> What you'll get.</p>
+        </div>
+        <div class = "row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <p style="font-size: 30px; text-align: center; margin-top: 2em;" class="lead">
+              <ol class="fa-ul fa-2x">
+                <li><i class="fa-li fa fa-check-square-o"></i>Free Housing Provided</li>
+                <li><i class="fa-li fa fa-check-square-o"></i>Local Philly Tours</li>
+                <li><i class="fa-li fa fa-check-square-o"></i>Tech Talks</li>
+                <li><i class="fa-li fa fa-check-square-o"></i>Speaker Events</li>
+                <li><i class="fa-li fa fa-check-square-o"></i>Restaurant Outings</li>
+                <li><i class="fa-li fa fa-check-square-o"></i>Networking Opportunities</li>
+                <li><i class="fa-li fa fa-check-square-o"></i>And More</li>
+              </ol>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- /Program Features -->
 
-    <div class="call-to-action">
-      <div class="container">
-        <div class="col-md-6 col-md-offset-3 text-center">
-          <h1>Updates</h1>
-          <hr/>
-          <p class="lead">PennApps Fellows 2014 is currently underway! We have 8 awesome Fellows for this summer working at 7 or Philly's best startups. We will have a blog up soon about this summer's Fellows Program.</p>
-          <h2>Questions?</h2>
-          <h3><a style="color:#fff;" href="mailto:fellows@pennapps.com">fellows@pennapps.com</a></h3>
-        </div>
-      </div>
-    </div>
-
     <!-- Sponsors -->
-    <div id="portfolio" class="about">
+    <section id="portfolio" class="about">
+      <div class = "subheader" style = "background-color: #a82e2e; margin-bottom: 2em">
+          <p style = "font-size: 110px; font-weight: 600; padding-top: 60px;">SPONSORS</p>
+          <p style = "font-size: 40px; font-weight: 300">The people who make this happen.</p>
+      </div>
       <div class="container">
-
-        <div class="text-center">
-            <h1>Our Sponsors</h1>
-            <hr/>
-        </div>
-
+        
         <div class="row other-sponsors">
-            <div class="col-md-3 sponsor-item">
-             <a href="http://startupphl.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/startupPHL.png" alt="StartupPHL" /></a> 
+            <div class="col-md-3 sponsor-item text-center">
+             <a href="http://startupphl.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/startupPHL.png" alt="StartupPHL" /></a>
             </div>
             <div class="col-md-3 sponsor-item">
-             <a href="http://50onred.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/50onRed-logo.png" alt="50onRed" /></a> 
+             <a href="http://50onred.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/50onRed-logo.png" alt="50onRed" /></a>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row other-sponsors">
           <div class="col-md-4 sponsor-item">
              <a href ="http://www.neat.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/neat_logo.png" alt="Neat Company" /></a>
           </div>
@@ -195,7 +213,7 @@
              <a href="http://www.arcweb.co/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/arcweb.png" alt="Arcweb" /></a>
           </div>
           <div class="col-md-4 sponsor-item">
-             <a href="http://www.mentortechventures.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/mentortech.png" alt="MentorTech Ventures" /></a> 
+             <a href="http://www.mentortechventures.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/mentortech.png" alt="MentorTech Ventures" /></a>
           </div>
           <div class="col-md-4 sponsor-item">
             <a href="http://www.azavea.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/azavea.png" alt="Azavea" /></a>
@@ -203,97 +221,47 @@
         </div>
 
       </div>
-    </div>
+    </section>
     <!-- /Sponsors -->
 
 
     <!-- Press -->
-    <div  class="services" style = "padding-bottom: 15px">
-      <div class="container">
-
-          <div class="text-center">
-            <h1>Press</h1>
-            <hr/>
-          </div>
-          
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h4><a class= "PressLink" href = "https://technical.ly/philly/2014/02/06/pennapps-fellows/">PennApps Fellows bringing college interns to Philly startups this summer</a></h4>
-          </div>
-          
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h4><a class = "PressLink"  href = "http://technical.ly/philly/2014/03/20/call-for-ideas-city-philadelphia-grants/">See the 5 winners of City of Philadelphia’s ‘Call for Ideas’ grants</a></h4>
-          </div>
-          
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h4><a class = "PressLink" href = "http://cityofphiladelphia.wordpress.com/2014/03/20/mayor-nutter-opens-new-office-for-fast-growing-tech-firm-sevone-announces-latest-startup-phl-call-for-ideas-grants/">Mayor Nutter Opens New Office for Fast Growing Tech Firm, Sevone; Announces Latest Startup PHL Call for Ideas Grants/a></h4>
-          </div>
-          
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h4><a class = "PressLink" href = "http://www.philly.com/philly/news/breaking/20140321_Nutter_announces_wave_of_startup_grants.html">Nutter announces wave of startup grants for Philadelphia companies and institutions</a></h4>
-          </div>
-          
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h4><a class = "PressLink" href = "http://www.newsworks.org/index.php/blogs/onward/item/66090?linktype=hp_blogs">City to bankroll internships, workshops to boost Philly tech scene</a></h4>
-          </div>
-          
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h4><a class = "PressLink"  href = "http://www.bizjournals.com/philadelphia/news/2014/03/21/the-students-to-startups-connection-thanks-to-the.html">Local startups cash in with new money from the city</a></h4>
-          </div>
-      
-          <br/>
-     </div> 
-    </div>
-
-
-
-
-
-    <div class="call-to-action">
-      <div class="container">
-        <div class="text-center">
-          <h1>The Team</h1>
-          <hr/>
-        </div>
-
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-           <img src="media/img/fabio.jpg" class='img-circle img-thumbnail profile-img'>
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>Fabio Fleitas</h3>
-                <p>Fabio is a sophomore at the University of Pennsylvania studying Computer Science with a minor in Engineering Entrepreneurship. He aspires to build a startup at Penn and has become more involved with the computer science and startup community this year. He envisions Philadelphia as a thriving entrepreneurial city and believes PennApps Fellows will help students see the abundant opportunities available here.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-           <img src="media/img/sean.jpg" class='img-circle img-thumbnail profile-img'>
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>Sean Lynch</h3>
-                <p>Sean Lynch is a sophomore studying Computer Science at the University of Pennsylvania. After attending his first PennApps early freshman year, he applied for the executive board and has been involved in recruiting volunteers and leading the sponsorship committee ever since then. He has an avid interest in digital community, web development and seeing his home city grow to meet student’s and entrepreneur’s incredible visions.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-           <img src="media/img/ascanio.jpg" class='img-circle img-thumbnail profile-img'>
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>Ascanio Guarini</h3>
-                <p>Ascanio is a sophomore at Swarthmore College studying Engineering. He is a member of the nvigor leadership team and is the nvigor lead on the PennApps Fellows program. He is also Business Manager for The Psych Report, a Philadelphia area startup offering a platform for psychology and behavioral economics based news reporting. He is interested in biotechnolgy and medical entrepreneurship and the potential for technology to change global health outcomes.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
+    <section  class="services" style = "padding-bottom: 15px">
+      <div class = "subheader" style = "background-color: #2a3a84; margin-bottom: 1em">
+        <p style = "font-size: 110px; font-weight: 600; padding-top: 60px;">PRESS</p>
+        <p style = "font-size: 40px; font-weight: 300">What other people think.</p>
       </div>
-    </div>
+      <div class="container">
+          <div class="col-md-6 col-md-offset-3 ">
+            <p style = "font-size: 30px;"><a class="PressLink" href="https://technical.ly/philly/2014/02/06/pennapps-fellows/">PennApps Fellows bringing college interns to Philly startups this summer</a></p>
+          </div>
+
+          <div class="col-md-6 col-md-offset-3">
+            <p style = "font-size: 30px;"><a class="PressLink"  href="http://technical.ly/philly/2014/03/20/call-for-ideas-city-philadelphia-grants/">See the 5 winners of City of Philadelphia’s ‘Call for Ideas’ grants</a></p>
+          </div>
+
+          <div class="col-md-6 col-md-offset-3">
+            <p style = "font-size: 30px;"><a class="PressLink" href="http://cityofphiladelphia.wordpress.com/2014/03/20/mayor-nutter-opens-new-office-for-fast-growing-tech-firm-sevone-announces-latest-startup-phl-call-for-ideas-grants/">Mayor Nutter Opens New Office for Fast Growing Tech Firm, Sevone; Announces Latest Startup PHL Call for Ideas Grants</a></p>
+          </div>
+
+          <div class="col-md-6 col-md-offset-3">
+            <p style = "font-size: 30px;"><a class="PressLink" href="http://www.philly.com/philly/news/breaking/20140321_Nutter_announces_wave_of_startup_grants.html">Nutter announces wave of startup grants for Philadelphia companies and institutions</a></p>
+          </div>
+
+          <div class="col-md-6 col-md-offset-3">
+            <p style = "font-size: 30px;"><a class="PressLink" href="http://www.newsworks.org/index.php/blogs/onward/item/66090?linktype=hp_blogs">City to bankroll internships, workshops to boost Philly tech scene</a></p>
+          </div>
+
+          <div class="col-md-6 col-md-offset-3">
+            <p style = "font-size: 30px;"><a class="PressLink"  href="http://www.bizjournals.com/philadelphia/news/2014/03/21/the-students-to-startups-connection-thanks-to-the.html">Local startups cash in with new money from the city</a></p>
+          </div>
+
+          <br/>
+     </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
@@ -320,38 +288,17 @@
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="media/js/jquery.js"></script>
-    <script src="media/js/bootstrap.js"></script>
+    <script type="text/javascript" src="media/js/jquery.js"></script>
+    <script type="text/javascript" src="media/js/bootstrap.js"></script>
+
+    <!-- Google Forms -->
+    <script type="text/javascript" src="media/js/google-forms.js"></script>
 
     <!-- Google Analytics -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-46216497-2', 'pennapps.com');
-    ga('send', 'pageview');
-    </script>
+    <script type="text/javascript" src="media/js/google-analytics.js"></script>
 
     <!-- Smooth Scrolling Page Button -->
-    <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-    </script>
+    <script type="text/javascript" src="media/js/smooth-scroll.js"></script>
 
   </body>
 

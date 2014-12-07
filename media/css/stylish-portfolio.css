@@ -12,11 +12,12 @@ body {
   text-align: center;
 }
 
-.vert-text h1 {
+.vert-text h3 {
   padding: 0;
-  margin: 0;
-  font-size: 4.5em;
-  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 400;
 }
 
 /* Side Menu */
@@ -118,6 +119,22 @@ body {
   background-size: cover;
 }
 
+.subheader {
+  margin-top: 0;
+  width: 100%;
+  height: 60vh;
+  color: white;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+#about-descript {
+  margin-top: 1em;
+}
 /* Intro */
 
 .intro {
@@ -127,7 +144,7 @@ body {
 /* Services */
 
 .services {
-  background: #7fbbda;
+  /*background: #7fbbda; */
   /*padding: 50px 0;*/
   /*color: #ffffff;*/
 }
@@ -169,7 +186,7 @@ i.service-icon {
 }
 
 .sponsor-item {
-  margin-bottom: 25px;
+  margin-bottom: 200px;
 }
 
 .img-portfolio {
@@ -199,6 +216,8 @@ i.service-icon {
 
 footer {
   padding: 75px 0;
+  background-image: url(../img/skyline.jpg);
+  background-size: cover;
 }
 
 .top-scroll {
