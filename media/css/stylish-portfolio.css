@@ -201,6 +201,10 @@ i.service-icon {
   padding-left: 20px;
   color: #fff;
   opacity: 0;
+  -webkit-transition: opacity 180ms ease-in-out;
+  -moz-transition: opacity 180ms ease-in-out;
+  -o-transition: opacity 180ms ease-in-out;
+  transition: opacity 180ms ease-in-out;
 }
 
 .feature a:hover div {
