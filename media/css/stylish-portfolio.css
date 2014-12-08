@@ -194,9 +194,12 @@ i.service-icon {
     -moz-align-items: flex-end;
     -ms-align-items: flex-end;
     align-items: flex-end;
-  text-align: left;
-    padding: 20px;
-    color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  padding-bottom: 2em;
+  padding-left: 20px;
+  color: #fff;
   opacity: 0;
 }
 
