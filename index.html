@@ -60,7 +60,16 @@
         display: table-cell;
         vertical-align: middle;
         max-width: 400px;
-        margin: 0 auto 1000px !important;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        /*margin: 0 auto 1000px !important;*/
+      }
+
+      @media (max-width: 992px) {
+        /* Allows responsive design */
+        .sponsor-item {
+          display: block;
+        }
       }
 
       .other-sponsors {
@@ -112,11 +121,23 @@
         color: white;
       }
 
-      @media (max-width: 992px) {
-        /* Allows responsive design */
-        .sponsor-item {
-          display: block;
-        }
+      .thumb {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .feature {
+        margin-bottom: 50px;
+      }
+
+      .feature a div {
+        width: 350px;
+        height: 350px;
+        left: 0;
+        right: 0;
       }
     </style>
   </head>
@@ -124,7 +145,7 @@
   <body>
 
     <!-- Full Page Image Header Area -->
-    <div id="top" class="header" style = "padding-bottom: 10px; padding-top: 15px">
+    <div id="top" class="header" style="padding-bottom: 10px; padding-top: 15px">
       <div class="vert-text">
         <img class="img-responsive" style="display: inline-block;" src="media/assets/newlogo.png">
         <h3 class="text-stroke" style="color: white;">Philadelphia's Premiere Student-Run Fellowship Program</h3>
@@ -137,30 +158,35 @@
     <!-- About -->
     <section id="about" class="about">
       <div class="container-fluid">
-        <div class = "subheader" style = "background-color: #30cfa4">
+        <div class="subheader" style="background-color: #30cfa4">
           <h1>ABOUT</h1>
           <p>What we do.</p>
         </div>
-        <div class = "row">
-          <div id = "about-descript" class = "col-md-6 col-md-offset-3 text-center">
-            <p class="lead" style = "font-size: 30px; margin-top: 1em">
-              PennApps Fellows is a student-run organization that pairs talented students from around the country with startups in Philadelphia for a 10-week (June 2nd to August 10th) summer internship. If accepted into the program, you will work closely with a local startup, get plugged into the Philly tech scene, and meet some of the coolest and brightest people in the country.</p>
+        <div class="container">
+          <div class="row">
+            <div id="about-descript" class="col-md-6 col-md-offset-3 text-center">
+              <p class="lead" style="font-size: 30px; margin-top: 1em">
+                PennApps Fellows is a student-run organization that pairs talented students from around the country with startups in Philadelphia for a 10-week (June 2nd to August 10th) summer internship. If accepted into the program, you will work closely with a local startup, get plugged into the Philly tech scene, and meet some of the coolest and brightest people in the country.</p>
+            </div>
           </div>
         </div>
-        <div class = "subheader" style = "background-color: #4bd0d2;">
+        <div class="subheader" style="background-color: #4bd0d2;">
           <h1>APPLY</h1>
           <p>Come join us.</p>
         </div>
-        <div class = "row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <p class = "lead" style = "font-size: 30px; margin-top: 1em">
-              We're accepting applications for Summer 2015! If you love coding and meeting awesome people like yourself, we want to hear from you!
-              <br><br>
-              Get started by clicking the button below.
-              <br><br>
-            <a href="/projectphl" class="btn btn-success btn-block btn-lg">Apply</a>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <p class="lead" style="font-size: 30px; margin-top: 1em">
+                We're accepting applications for Summer 2015! If you love coding and meeting awesome people like yourself, we want to hear from you!
+                <br><br>
+                Get started by clicking the button below.</p>
+                <br><br>
+              <a href="/projectphl" class="btn btn-success btn-block btn-lg">Apply</a>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
     <!-- /About -->
@@ -168,34 +194,42 @@
     <!-- Program Features -->
     <section class="services">
       <div class="container-fluid">
-        <div class = "subheader" style = "background-color: #eea35d; margin-bottom: 2em">
+        <div class="subheader" style="background-color: #eea35d; margin-bottom: 2em">
           <h1>FEATURES</h1>
           <p> What you'll get.</p>
         </div>
       </div>
-      <div class = "container">
-        <div class = "row">
-          <div class = "col-md-4">
-            <div class = "feature"><a>
-              <img src = "media/img/features/housing.jpg" style = "width:350px;height:350px"><div style = "padding-bottom: 3em; padding-left: 45px">Free Housing</div>
-            </div></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12 feature">
+            <div class="thumb">
+            <a><img src="media/img/features/housing.jpg" style="width:350px;height:350px"><div style="padding-bottom: 3em; padding-left: 45px">Free Housing</div></a>
+            </div>
           </div>
-          <div class = "col-md-4 feature">
-            <a><img src = "media/img/features/tours.jpg" style = "width:350px;height:350px"><div style = "padding-bottom: 3em; padding-left: 65px">Philly Tours</div></a>
+          <div class="col-lg-4 col-md-6 col-xs-12 feature">
+            <div class="thumb">
+            <a><img src="media/img/features/tours.jpg" style="width:350px;height:350px"><div style="padding-bottom: 3em; padding-left: 65px">Philly Tours</div></a>
+            </div>
           </div>
-          <div class = "col-md-4 feature">
-            <a><img src = "media/img/features/techtalks.jpg" style = "width:350px;height:350px"><div style = "padding-bottom: 2em">Tech Talks + Speaker Events</div></a>
+          <div class="col-lg-4 col-md-6 col-xs-12 feature">
+            <div class="thumb">
+            <a><img src="media/img/features/techtalks.jpg" style="width:350px;height:350px"><div style="padding-bottom: 2em">Tech Talks + Speaker Events</div></a>
+            </div>
           </div>
-        </div>
-        <div class = "row">
-          <div class = "col-md-4 feature">
-            <a><img src = "media/img/features/restaurants.jpg" style = "width:350px;height:350px"><div>Restaurant Outings</div></a>
+          <div class="col-lg-4 col-md-6 col-xs-12 feature">
+            <div class="thumb">
+            <a><img src="media/img/features/restaurants.jpg" style="width:350px;height:350px"><div>Restaurant Outings</div></a>
+            </div>
           </div>
-          <div class = "col-md-4 feature">
-            <a><img src = "media/img/features/networking.jpg" style = "width:350px;height:350px"><div>Networking Opportunities</div></a>
+          <div class="col-lg-4 col-md-6 col-xs-12 feature">
+            <div class="thumb">
+            <a><img src="media/img/features/networking.jpg" style="width:350px;height:350px"><div>Networking Opportunities</div></a>
+            </div>
           </div>
-          <div class = "col-md-4 feature">
-            <a><img src = "media/img/features/sports.jpg" style = "width:350px;height:350px"><div style = "padding-bottom: 3em; padding-left: 45px">Sports Events</div></a>
+          <div class="col-lg-4 col-md-6 col-xs-12 feature">
+            <div class="thumb">
+            <a><img src="media/img/features/sports.jpg" style="width:350px;height:350px"><div style="padding-bottom: 3em; padding-left: 45px">Sports Events</div></a>
+            </div>
           </div>
         </div>
       </div>
@@ -203,7 +237,7 @@
     <!-- /Program Features -->
 
     <!-- Timeline -->
-    <div class ="subheader" style = "background-color: #77D18E">
+    <div class ="subheader" style="background-color: #77D18E">
       <h1>TIMELINE</h1>
       <p>Who we've been.</p>
     </div>
@@ -304,9 +338,9 @@
 
     <!-- Sponsors -->
     <section id="portfolio" class="about">
-      <div class = "subheader" style = "background-color: #a82e2e; margin-bottom: 2em">
-          <h1>SPONSORS</h1>
-          <p>The people who make this happen.</p>
+      <div class="subheader" style="background-color: #a82e2e; margin-bottom: 2em">
+          <h1>2014 SPONSORS</h1>
+          <p>Companies that helped participated last year.</p>
       </div>
       <div class="container">
         
@@ -362,8 +396,8 @@
 
 
     <!-- Press -->
-    <section  class="services" style = "padding-bottom: 15px">
-      <div class = "subheader" style = "background-color: #2a3a84; margin-bottom: 1em">
+    <section  class="services" style="padding-bottom: 15px">
+      <div class="subheader" style="background-color: #2a3a84; margin-bottom: 1em">
         <h1>PRESS</h1>
         <p>What other people think.</p>
       </div>
@@ -395,7 +429,7 @@
             <ul class="list-inline">
               <li><a href="https://www.facebook.com/pennapps"><i class="fa fa-facebook fa-3x"></i></a></li>
               <li><a href="https://twitter.com/PennAppsFellows"><i class="fa fa-twitter fa-3x"></i></a></li>
-              <li><a href="mailto:fellows@pennapps.com"><i class="fa fa-envelope fa-3x"></i></a></li>
+              <li><a href="mailto:hello@pennappsfellows.com"><i class="fa fa-envelope fa-3x"></i></a></li>
             </ul>
             <hr>
             <p>Copyright &copy; PennApps Fellows 2014</p>
