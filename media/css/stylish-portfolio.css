@@ -20,6 +20,16 @@ body {
   font-weight: 400;
 }
 
+.navbar-nav li a:hover {
+  color: white;
+}
+
+ul.nav {
+  margin-top: 10px;
+  font-weight: 100;
+  float: right;
+}
+
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -129,7 +139,11 @@ body {
 }
 
 .lead {
-  font-size: 20px;
+  font-size: 34px; 
+  margin-top: 1em; 
+  font-weight: 100; 
+  color:#808080; 
+  line-height: 160%
 }
 
 #about-descript {
@@ -541,11 +555,11 @@ ul li {
   font-weight: bold;
 }*/
 .title {
-  font-size: 110px;
+  font-size: 90px;
   font-weight: 300;
 }
 .sub {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 100;
 }
 
@@ -578,11 +592,11 @@ footer, footer h3 {
   opacity: 1;
 }
 
-#fellows {
+#fellows_div {
   margin-left: 5%;
 }
 
-#fellows p {
+#fellows_div p {
   font-size: 30px;
   font-weight: 100;
 }
@@ -593,32 +607,17 @@ footer, footer h3 {
 
  @media (max-width: 768px) {
   /* Allows responsive design */
-  .subheader h1 {
-    font-size: 40px;
+  .title {
+    font-size: 70px;
   }
-  .subheader p {
+  .sub {
     font-size: 30px;
   }
 
   .lead {
     text-align: left;
+    font-size: 25px;
   }
 }
-
-/* Responsive */
-
-@media (max-width: 768px) {
-	
-  .header {
-	background: url(../img/skyline.jpg) no-repeat center center scroll; 
-  }
-
-  .callout {
-	background: url(../img/callout.jpg) no-repeat center center scroll; 
-  }
-
-  .map {
-	height: 75%;
-  }
 
 }

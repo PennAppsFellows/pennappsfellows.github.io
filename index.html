@@ -31,12 +31,35 @@
   </head>
 
   <body>
-
+  <div class='navbar navbar-default navbar-custom navbar-right navbar-fixed-top'>
+    <div class="container-fluid">
+      <div class='navbar-header'>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="media/assets/newlogo.png" style="height:50px; width: 70px;"></a>
+      </div>
+      <div class='collapse navbar-collapse' id="navigation">
+        <ul class='nav navbar-nav'>
+          <li><a class='page-scroll' href='#about'>About</a></li>
+          <li><a class='page-scroll' href='#features'>Features</a></li>
+          <li><a class='page-scroll' href='#timeline'>Timeline</a></li>
+          <li><a class='page-scroll' href='#fellows'>Fellows</a></li>
+          <li><a class='page-scroll' href='#sponsors'>Sponsors</a></li>
+          <li><a class='page-scroll' href='#press'>Press</a></li>
+          <li><a class='page-scroll' href='#contact'>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
     <!-- Full Page Image Header Area -->
     <div id="top" class="header" style="padding-bottom: 10px; padding-top: 150px">
       <div class="vert-text">
-        <img class="img-responsive" style="display: inline-block; height: 300px; width: 500px" src="media/assets/newlogo.png">
-        <p class="text-stroke" style="color: white; font-size: 55px; font-weight: 100; padding-top: 45px">Philadelphia's Premiere Student-Run Fellowship Program</p>
+        <img class="img-responsive" id="logo" style="display: inline-block; height: 300px; width: 500px" src="media/assets/newlogo.png">
+        <p class="text-stroke" style="color: white; font-size: 50px; font-weight: 100; padding-top: 45px">Philadelphia's Premiere Student-Run Fellowship Program</p>
         <!-- <a href="#about" class="btn btn-default btn-lg header-button">More Info</a> -->
         <a href="#about"><img src="media/img/arrow.png" style="margin-top: 50px;"></a>
       </div>
@@ -53,7 +76,7 @@
         <div class="container">
           <div class="row">
             <div id="about-descript" class="col-md-10 col-md-offset-1 text-center">
-              <p class="lead" style="font-size: 32px; margin-top: 1em; font-weight: 150; color:#808080">
+              <p class="lead">
                 PennApps Fellows is a student-run non-profit organization that pairs talented students from around the country to Philadelphia tech companies & startups for a 10-week summer internship program. If accepted into the program, you will work closely with a local startup, get plugged into the Philly tech scene, enjoy all of our features (listed below), and meet some of the coolest and brightest people in the country.</p>
             </div>
           </div>
@@ -111,7 +134,7 @@
     <section id="timeline">
     <div class="subheader" style="background-color: #88D7BC">
     <!-- <div class="subheader" style="background-color: #77D18E"> -->
-      <p class = "title">TIMELINE</h1>
+      <p class = "title">TIMELINE</p>
       <p class = "sub">Our 2015 Program Timeline <br><i style="font-size: 50%">(subject to change)</i></p>
     </div>
     <div class="container">
@@ -186,13 +209,13 @@
     </div>
     </section>
 
-    <section id="sponsor" class="about">
+    <section id="fellows">
       <div class="subheader" style="background-color: #88D7BC; margin-bottom: 2em">
       <!-- <div class="subheader" style="background-color: #9DB5E6; margin-bottom: 2em"> -->
-          <p class = "title">2014 FELLOWS</h1>
+          <p class = "title">2014 FELLOWS</p>
           <p class = "sub">Meet the Fellows.</p>
       </div>
-      <div class="container-fluid" id="fellows">
+      <div class="container-fluid" id="fellows_div">
         
         <div class="row other-sponsors" style="margin-top: 50px">
             <div class="col-md-3 sponsor-item text-center">
@@ -235,7 +258,7 @@
     </section>
 
     <!-- New Sponsors -->
-    <section id="sponsor" class="about">
+    <section id="sponsors" class="about">
       <div class="subheader" style="background-color: #88D7BC; margin-bottom: 2em">
       <!-- <div class="subheader" style="background-color: #9DB5E6; margin-bottom: 2em"> -->
           <p class = "title">2015 SPONSORS</h1>
@@ -397,7 +420,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
@@ -434,7 +457,20 @@
 
     <!-- Smooth Scrolling Page Button -->
     <script type="text/javascript" src="media/js/smooth-scroll.js"></script>
-
+    <script>
+      var navbarHidden = false;
+      function updateNavbar() {
+        if(navbarHidden && window.scrollY > 200) {
+          $(".navbar").animate({'margin-top': "0px"}, 500);
+          navbarHidden = false;
+        } else if(!navbarHidden && window.scrollY <= 200) {
+          $(".navbar").animate({'margin-top': "-90px"}, 500);
+          navbarHidden = true;
+        }
+      }
+      $(window).scroll(updateNavbar);
+      updateNavbar();
+    </script>
   </body>
 
 </html>
