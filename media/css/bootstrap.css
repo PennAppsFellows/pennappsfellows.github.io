@@ -3683,7 +3683,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
+  color: white;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
