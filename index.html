@@ -1,476 +1,455 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PennApps Fellows is a student-run organization that pairs talented students from around the country with startups in Philadelphia for a 10-week summer internship.">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PennApps Fellows | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300|Droid+Serif' rel='stylesheet' type='text/css'>
+    <style>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    </style>
 
-    <title>PennApps Fellows - Summer 2015 Technical Internships</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="media/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Add custom CSS here -->
-    <link href="media/css/stylish-portfolio.css" rel="stylesheet">
-    <link href="media/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <!-- Unlink temporarily -->
-    <!-- <link href="media/css/site.css" rel="stylesheet"> -->
-
-    <!-- Metatags for Facebook Share -->
-    <meta property="og:site_name" content="PennApps Fellows"/>
-    <meta property="og:title" content="PennApps Fellows"/>
-    <meta property="og:url" content="http://www.pennappsfellows.com/"/>
-    <meta property="og:image" content="http://www.pennappsfellows.com/media/img/features/features-preview.png"/>
-    <meta property="og:description" content="PennApps Fellows is a student-run organization that pairs talented students from around the country with startups in Philadelphia for a 10-week summer internship."/>
   </head>
-
   <body>
-  <div class='navbar navbar-default navbar-custom navbar-right navbar-fixed-top'>
-    <div class="container-fluid">
-      <div class='navbar-header'>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="media/assets/newlogo.png" style="height:40px; width:60px;"></a>
+
+      <!-- TODO Video -->
+      <div class="show-for-medium-up">
+
+          <div class="widescreen youtube" style="background-color:black;">
+            <!-- <div id='ytplayer'></div> -->
+
+            <script>
+              // Load the IFrame Player API code asynchronously.
+              var tag = document.createElement('script');
+              tag.src = "https://www.youtube.com/player_api";
+              var firstScriptTag = document.getElementsByTagName('script')[0];
+              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+              // Replace the 'ytplayer' element with an <iframe> and
+              // YouTube player after the API code downloads.
+              var player;
+              function onYouTubePlayerAPIReady() {
+                player = new YT.Player('ytplayer', {
+                  height: '700px',
+                  width: '100%',
+                  videoId: '4u0-JGXaGq4',
+                  playerVars: {
+                      'autoplay': 1,
+                      'controls': 0,
+                      'enablejsapi': 1,
+                      'showinfo': 0,
+                      'autohide': 1
+                  },
+                  events: {
+                      'onReady': onPlayerReady
+                  }
+                });
+              }
+              function onPlayerReady(event) {
+                event.target.mute();
+                event.target.playVideo();
+              }
+            </script>
+          </div>
       </div>
-      <div class='collapse navbar-collapse' id="navigation">
-        <ul class='nav navbar-nav'>
-          <li><a class='page-scroll' href='#about'>About</a></li>
-          <li><a class='page-scroll' href='#features'>Features</a></li>
-          <li><a class='page-scroll' href='#timeline'>Timeline</a></li>
-          <li><a class='page-scroll' href='#fellows'>Fellows</a></li>
-          <li><a class='page-scroll' href='#sponsors'>Sponsors</a></li>
-          <li><a class='page-scroll' href='#press'>Press</a></li>
-          <li><a class='page-scroll' href='#contact'>Contact</a></li>
-        </ul>
+      <img src="img/background.jpg" width="100%"></img>
+
+      <!-- Header -->
+      <div class="contain-to-grid sticky" style="background-color: #61B136;"> <!--style="background-color: #43AC6A;" -->
+        <nav class="top-bar" style="background-color: #61B136;" data-topbar role="navigation" data-options="sticky_on: large">
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="#">PennApps Fellows</a></h1> <!-- <img src="img/logo/fellowsproto3.png"></img> -->
+                </li>
+            </ul>
+
+            <!-- Menu -->
+            <section class="top-bar-section">
+                <ul class="right">
+                    <li><a href="mailto:fellows@pennapps.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="http://twitter.com/PennAppsFellows"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://medium.com/pennapps-fellows"><i class="fa fa-medium"></i></a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Menu</a>
+                        <ul class="dropdown">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#companies">Companies</a></li>
+                            <li><a href="#apply">Application</a></li>
+                            <li><a href="#history">History</a></li>
+                            <li><a href="#sponsors">Sponsors</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
       </div>
-    </div>
-  </div>
-    <!-- Full Page Image Header Area -->
-    <div id="top" class="header" style="padding-bottom: 10px; padding-top: 150px">
-      <div class="vert-text">
-        <img class="img-responsive" id="logo" style="display: inline-block; height: 300px; width: 500px" src="media/assets/newlogo.png">
-        <p class="text-stroke" style="color: white; font-size: 50px; font-weight: 100; padding-top: 45px">Philadelphia's Premiere Student-Run Fellowship Program</p>
-        <!-- <a href="#about" class="btn btn-default btn-lg header-button">More Info</a> -->
-        <a href="#about"><img src="media/img/arrow.png" style="margin-top: 50px;"></a>
+
+      <!-- About -->
+        <div id="about" class="row">
+          <div class="small-12 medium-8 large-6 small-centered columns">
+            <div class="header panel">
+              <div class="sign">
+                <h1>About</h1>
+              </div>
+              <p>PennApps Fellows is a 10 week summer internship for students who want to explore and get to know the Philly tech scene. </p>
+            </div>
+          </div>
+        </div>
+
+      <!-- Features -->
+      <hr>
+
+      <div id="features" class="wide-header">
+          <div class="small-12 columns color-header">
+              <h2 class="text-center" style="color: white;">Program Features</h2>
+          </div>
       </div>
-    </div>
-    <!-- /Full Page Image Header Area -->
 
-    <!-- About -->
-    <section id="about" class="about">
-      <div class="container-fluid">
-        <div class="subheader" style="background-color: #88D7BC">
-          <p class = "title">ABOUT</p>
-          <p class = "sub">Who we are.</p>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div id="about-descript" class="col-md-10 col-md-offset-1 text-center">
-              <p class="lead">
-                PennApps Fellows is a student-run non-profit organization that pairs talented students from around the country to Philadelphia tech companies & startups for a 10-week summer internship program. If accepted into the program, you will work closely with a local startup, get plugged into the Philly tech scene, enjoy all of our features (listed below), and meet some of the coolest and brightest people in the country.</p>
-            </div>
+      <br>
+      <br>
+      <br>
+
+      <div class="row">
+          <div class="small-12 medium-6 medium-offset-2 columns">
+              <h3 class="subheader text-right">Free Housing</h3>
+              <p class= "text-right panel">We take care of housing so you can worry about building the next Facebook. SF and NYC can be expensive, here in Philly, we got your back. Past locations include Intl. House Philly and The Axis.</p>
           </div>
-        </div>
+          <div class="medium-4 show-for-medium-up columns">
+              <img src="img/features/housing.jpg"></img>
+          </div>
       </div>
-    </section>
-    <!-- /About -->
-    <!-- Program Features -->
-    <section id="features" class="services">
-      <div class="container-fluid">
-      <div class="subheader" style="background-color: #88D7BC; margin-bottom: 2em">
-        <!-- <div class="subheader" style="background-color: #eea35d; margin-bottom: 2em"> -->
-          <p class = "title">FEATURES</p>
-          <p class = "sub">What you'll experience.</p>
-        </div>
+      <br>
+      <div class="row">
+          <div class="medium-4 show-for-medium-up columns">
+              <img src="img/features/group-events.jpg"></img>
+          </div>
+          <div class="small-12 medium-6 end columns">
+              <h3 class="subheader text-left">Fellows Events</h3>
+              <p class= "text-left panel">Get to know your fellow Fellows: Phillies games, fancy dinners downtown, museums, Six Flags, movie nights, mini-hackathons, you name it, we'll help you do it.</p>
+          </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-xs-12 feature">
-            <div class="thumb">
-            <a><img src="media/img/features/housing.jpg" style="width:350px;height:350px"><div style="padding-bottom: 3em; padding-left: 45px">Free Housing</div></a>
-            </div>
+      <br>
+      <div class="row">
+          <div class="small-12 medium-6 medium-offset-2 columns">
+              <h3 class="subheader text-right">Exploring Philadelphia</h3>
+              <p class= "text-right panel">Visit all parts of Philly from Old City resturants to Center City museums, we have you covered. Get to know awesome local groups like Code for Philly.</p>
           </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 feature">
-            <div class="thumb">
-            <a><img src="media/img/features/tours.jpg" style="width:350px;height:350px"><div style="padding-bottom: 3em; padding-left: 65px">Philly Tours</div></a>
-            </div>
+          <div class="medium-4 show-for-medium-up columns">
+              <img src="img/features/fun.jpg"></img>
           </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 feature">
-            <div class="thumb">
-            <a><img src="media/img/features/techtalks.jpg" style="width:350px;height:350px"><div style="padding-bottom: 2em">Tech Talks + Speaker Events</div></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 feature">
-            <div class="thumb">
-            <a><img src="media/img/features/restaurants.jpg" style="width:350px;height:350px"><div>Restaurant Outings</div></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 feature">
-            <div class="thumb">
-            <a><img src="media/img/features/networking.jpg" style="width:350px;height:350px"><div>Networking Opportunities</div></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 feature">
-            <div class="thumb">
-            <a><img src="media/img/features/sports.jpg" style="width:350px;height:350px"><div style="padding-bottom: 3em; padding-left: 45px">Sports Events</div></a>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-    <!-- /Program Features -->
-
-    <!-- Timeline -->
-    <section id="timeline">
-    <div class="subheader" style="background-color: #88D7BC">
-    <!-- <div class="subheader" style="background-color: #77D18E"> -->
-      <p class = "title">TIMELINE</p>
-      <p class = "sub">Our 2015 Program Timeline <br><i style="font-size: 50%">(subject to change)</i></p>
-    </div>
-    <div class="container">
-    <ul class="timeline">
-        <li>
-          <div class="timeline-badge"><i class="fa fa-bolt"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4 class="timeline-title">2015 Applications Open</h4>
-              <p><small class="text-muted"><i class="fa fa-clock-o"></i> December 8th</small></p>
-            </div>
+      <br>
+      <!-- <div class="row">
+          <div class="medium-4 show-for-medium-up columns">
+              <img src="img/features/fun.jpg"></img>
           </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-badge warning"><i class="fa fa-lock"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4 class="timeline-title">2015 Applications Close</h4>
-              <p><small class="text-muted"><i class="fa fa-clock-o"></i> February 1st @ 11:59pm</small></p>
-            </div>
-            <div class="timeline-body">
-              <p>We carefully review all applicants and see who moves onto second rounds.</p>
-            </div>
+          <div class="small-12 medium-8 columns">
+              <h4 class="subheader text-left">Fun</h4>
+              <p class= "text-left">We take care of housing so you can worry about building the next Facebook.</p>
           </div>
-        </li>
-        <li>
-          <div class="timeline-badge danger"><i class="fa fa-comments-o"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4 class="timeline-title">Second Round Decisions</h4>
-              <p><small class="text-muted"><i class="fa fa-clock-o"></i> February 13th</small></p>
-            </div>
-            <div class="timeline-body">
-              <p>Decisions for students moving on to our second round will be announced. Second round applicants will have resumes sent to host companies for interviews.</p>
-            </div>
-          </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-badge primary"><i class="fa fa-bell-o"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4 class="timeline-title">Final Decisions</h4>
-              <p><small class="text-muted"><i class="fa fa-clock-o"></i> March 16th</small></p>
-            </div>
-            <div class="timeline-body">
-              <p>Following interviews with the tech companies, the Fellows Class of 2015 will be announced.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-badge info"><i class="fa fa-plane"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4 class="timeline-title">2015 Program Start</h4>
-              <p><small class="text-muted"><i class="fa fa-clock-o"></i> June 1st</small></p>
-            </div>
-            <div class="timeline-body">
-              <p>Now the fun begins...</p>
-            </div>
-          </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4 class="timeline-title">2015 Program End</h4>
-              <p><small class="text-muted"><i class="fa fa-clock-o"></i> August 7th</small></p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    </section>
-
-    <section id="fellows">
-      <div class="subheader" style="background-color: #88D7BC; margin-bottom: 2em">
-      <!-- <div class="subheader" style="background-color: #9DB5E6; margin-bottom: 2em"> -->
-          <p class = "title">2014 FELLOWS</p>
-          <p class = "sub">Meet the Fellows.</p>
-      </div>
-      <div class="container-fluid" id="fellows_div">
-        
-        <div class="row other-sponsors" style="margin-top: 50px">
-            <div class="col-md-3 sponsor-item text-center">
-             <img class="img-portfolio img-responsive" src="media/img/albert.png" alt="alby" />
-             <br><p>Albert Guo</p>
-            </div>
-            <div class="col-md-3 sponsor-item">
-             <img class="img-portfolio img-responsive" src="media/img/alican.png" alt="alican" />
-            <br><p>Alican Mutuş</p>
-          </div>
-          <div class="col-md-3 sponsor-item">
-             <img class="img-portfolio img-responsive" src="media/img/austin.png" alt="austin" />
-            <br><p>Austin Steady</p>
-          </div>
-          <div class="col-md-3 sponsor-item">
-             <img class="img-portfolio img-responsive" src="media/img/cole.png" alt="cole" />
-            <br><p>Cole Kettler</p>
-          </div>
-        </div>
-
-        <div class="row other-sponsors">
-          <div class="col-md-2 sponsor-item">
-             <img class="img-portfolio img-responsive" src="media/img/derrick.png" alt="derrick" />
-            <br><p>Derrick Duncan</p>
-          </div>
-          <div class="col-md-2 sponsor-item">
-             <img class="img-portfolio img-responsive" src="media/img/katherine.png" alt="katherine" />
-            <br><p>Katherine Obermeyer</p>
-          </div>
-          <div class="col-md-2 sponsor-item">
-             <img class="img-portfolio img-responsive" src="media/img/rohan.png" alt="rohan" />
-            <br><p>Rohan Shah</p>
-          </div>
-          <div class="col-md-2 sponsor-item">
-             <img class="img-portfolio img-responsive" src="media/img/victor.png" alt="victor" />
-            <br><p>Victor Lourng</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- New Sponsors -->
-    <section id="sponsors" class="about">
-      <div class="subheader" style="background-color: #88D7BC; margin-bottom: 2em">
-      <!-- <div class="subheader" style="background-color: #9DB5E6; margin-bottom: 2em"> -->
-          <p class = "title">2015 SPONSORS</h1>
-          <p class = "sub">The companies that are making it happen.</p>
-      </div>
-      <div class="container">
-        
-        <div class="row other-sponsors" style="margin-top: 50px">
-            <div class="col-md-3 sponsor-item text-center">
-             <a href="http://useartisan.com/"><img class="img-portfolio img-responsive" src="media/img/new-sponsor-logos/artisan-logo-800x145.jpg" alt="artisan" /></a>
-            </div>
-            <div class="col-md-4 sponsor-item">
-             <a href="http://point.io"><img class="img-portfolio img-responsive" src="media/img/new-sponsor-logos/pointio.jpg" alt="Point.io" /></a>
-          </div>
-            <div class="col-md-4 sponsor-item">
-            <a href="#"><img class="img-portfolio img-responsive" src="media/img/new-sponsor-logos/Logo01.jpg" alt="bee" /></a>
-          </div>
-        </div>
-
-
-        <div class="row other-sponsors">
-           <div class="col-md-4 sponsor-item">
-             <a href ="https://www.getguru.com/"><img class="img-portfolio img-responsive" src="media/img/new-sponsor-logos/Guru-logo.png" alt="Guru" /></a>
-            </div>
-          <div class="col-md-4 sponsor-item">
-             <a href="http://viridityenergy.com"><img class="img-portfolio img-responsive" src="media/img/new-sponsor-logos/Viriditybestlogo.png" alt="Viridity" /></a>
-          </div>
-          <div class="col-md-4 sponsor-item">
-             <a href="http://www.curalate.com"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/curalate.png" alt="Curalate" /></a>
-          </div>
-        </div>
-
-        <div class="row other-sponsors">
-
-          <div class="col-md-4 sponsor-item">
-             <a href="http://savanainc.com/"><img class="img-portfolio img-responsive" src="media/img/new-sponsor-logos/SavanaLogo.jpg" alt="savana" /></a>
-          </div>
-          <div class="col-md-4 sponsor-item">
-             <a href="http://www.monetate.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/monetate.png" alt="Monetate" /></a>
-          </div>
-          <div class="col-md-4 sponsor-item">
-            <a href="http://www.picwell.com/"><img class="img-portfolio img-responsive" src="media/img/new-sponsor-logos/pcw001_PicwellLogo.png" alt="Picwell" /></a>
-          </div>
-        </div>
-
-        <div class="row other-sponsors">
-          <div class="col-md-4 sponsor-item">
-            <a href="http://www.soceana.com/"><img class="img-portfolio img-responsive" src="media/img/new-sponsor-logos/soceana.png" alt="Soceana" /></a>
-          </div>
-
-        </div>
-    </div>
-
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1 text-center">
-            <p class="lead" style="font-size: 30px; margin-top: 1em">
-              Interested in hosting a PennApps Fellow at your company? Apply now to become a host company! Company applications are open until <b>February 6th</b>. If you have any questions, shoot us an email.
-            </p>
-            <a href="http://www.tfaforms.com/359552" style="min-width: 200px;" class="btn btn-success btn-lg">Application Form</a>
-            <a href="media/assets/sponsorship.pdf" style="min-width: 200px;" class="btn btn-primary btn-lg">Sponsorship Details</a>
-            <a href="mailto:hello@pennappsfellows.com" style="min-width: 200px;" class="btn btn-default btn-lg">Contact Us</a>
-          </div>
-        </div>
       </div> -->
-    </section>
-    <!-- /New Sponsors -->
 
-    <!-- 2014 Sponsors -->
-    <section id="old-sponsor" class="about">
-    <div class="subheader" style="background-color: #88D7BC; margin-bottom: 2em">
-      <!-- <div class="subheader" style="background-color: #FFD1A3; margin-bottom: 2em"> -->
-          <p class = "title">2014 SPONSORS</h1>
-          <p class = "sub">The companies that got us started.</p>
-      </div>
-      <div class="container">
-        
-        <div class="row other-sponsors" style="margin-top: 20px; margin-bottom: 40px">
-            <div class="col-md-3 sponsor-item text-center">
-             <a href="http://startupphl.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/startupPHL.png" alt="StartupPHL" /></a>
-            </div>
+      <!-- Comapnies -->
+      <hr>
 
-                    <div class="col-md-2 sponsor-item">
-            <a href="http://www.azavea.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/azavea.png" alt="Azavea" /></a>
+      <div id="companies" class="wide-header">
+          <div class="small-12 columns color-header">
+              <h2 class="text-center" style="color: white;">Participating Companies</h2>
           </div>
-        </div>
-
-        <div class="row other-sponsors">
-          <div class="col-md-4 sponsor-item">
-             <a href ="http://www.neat.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/neat_logo.png" alt="Neat Company" /></a>
-          </div>
-          <div class="col-md-4 sponsor-item">
-            <a href="http://useartisan.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/artisan.png" alt="Artisan Mobile" /></a>
-          </div>
-          <div class="col-md-4 sponsor-item">
-            <a href="http://monetate.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/monetate.png" alt="Monetate" /></a>
-          </div>
-        </div>
-
-        <div class="row other-sponsors">
-          <div class="col-md-4 sponsor-item">
-            <a href="http://socialie.com"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/socialieLogo.png" alt="Socialie" /></a>
-          </div>
-          <div class="col-md-4 sponsor-item">
-            <a href="http://www.ticketleap.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/ticketleap.png" alt="TicketLeap" /></a>
-          </div>
-
-          <div class="col-md-4 sponsor-item">
-             <a href="http://www.mentortechventures.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/mentortech.png" alt="MentorTech Ventures" /></a>
-          </div>
-        </div>
-
-
-        <div class="row other-sponsors">
-          <div class="col-md-2 sponsor-item">
-             <a href="http://www.arcweb.co/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/arcweb.png" alt="Arcweb" /></a>
-          </div>
-          <div class="col-md-4 sponsor-item">
-            <a href="http://www.zivtech.com/"><img class="img-portfolio img-responsive" src="media/img/new-sponsor-logos/zivtech-logo_800.png" alt="Zivtech" /></a>
-          </div>
-            <div class="col-md-3 sponsor-item">
-             <a href="http://50onred.com/"><img class="img-portfolio img-responsive" src="media/img/sponsor-logos/50onRed-logo.png" alt="50onRed" /></a>
-
-          </div>
-        </div>
-
-      </div>
-    </section> 
-    <!-- /2014 Sponsors -->
-
-
-    <!-- Press -->
-    <section id="press" class="services" style="padding-bottom: 15px">
-    <div class="subheader" style="background-color: #88D7BC; margin-bottom: 1em"> 
-      <!-- <div class="subheader" style="background-color: #FFD1A3; margin-bottom: 1em"> -->
-        <p class = "title">PRESS</h1>
-        <p class = "sub">What other people think.</p>
       </div>
 
-      <div class="container">
-        <div class="row other-sponsors">
-            <div class="col-md-3 sponsor-item text-center">
-             <a href="http://technical.ly/philly/2014/03/20/call-for-ideas-city-philadelphia-grants/"><img style="max-height: 150px;" class="img-portfolio img-responsive" src="media/img/press-logos/technically.png" alt="Technical.ly Philly" /></a>
-            </div>
-            <div class="col-md-3 sponsor-item">
-             <a href="http://www.philly.com/philly/news/breaking/20140321_Nutter_announces_wave_of_startup_grants.html"><img class="img-portfolio img-responsive" src="media/img/press-logos/phillycom.png" alt="Philly.com" /></a>
-          </div>
-        </div>
+      <br>
+      <br>
+      <br>
 
-        <div class="row other-sponsors">
-            <div class="col-md-3 sponsor-item text-center">
-             <a href="http://www.newsworks.org/index.php/blogs/onward/item/66090?linktype=hp_blogs"><img class="img-portfolio img-responsive" src="media/img/press-logos/newsworks.png" alt="Newsworks" /></a>
-            </div>
-            <div class="col-md-3 sponsor-item">
-             <a href="http://www.bizjournals.com/philadelphia/news/2014/03/21/the-students-to-startups-connection-thanks-to-the.html"><img style="max-height: 150px;" class="img-portfolio img-responsive" src="media/img/press-logos/phillybizjournal.png" alt="Philly BizJournal" /></a>
+      <div class="row">
+          <div class="small-12 columns panel">
+              <p class="text-center">These companies are the backbone of the thriving startup community in Philly.</p>
           </div>
-        </div>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-      <div class="container">
+      <div class="row">
+          <div class="small-10 small-centered columns text-center">
+              <a href="https://docs.google.com/forms/d/1hDhOCbEVyp7xX1_f_dMJrXj11RyB0KlAtr9qvCtp7WQ/viewform" class="button success radius">Company Application</a>
+          </div>
+      </div>
+
+      <!-- Small -->
+      <div class="show-for-small-only panel">
+          <div class="row">
+              <div class="small-4 columns">
+                  <img src="img/companies/curalate.png"></img>
+              </div>
+              <div class="small-4 columns">
+                  <img src="img/companies/guru.png"></img>
+              </div>
+              <div class="small-4 columns">
+                  <img src="img/companies/point.io.png"></img>
+              </div>
+        </div>
+        <br>
         <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <p style = "font-weight: 100; font-size: 27px">PennApps Fellows is a collaborative effort with:</p>
-            <br/>
-            <ul class="list-inline">
-              <li><a href="http://pennapps.com/"><img src="media/img/pennapps-logo.png" /></a></li>
-            </ul>
-            <br/><br/>
-            <ul class="list-inline">
-              <li><a href="https://www.facebook.com/pennapps" style="margin-right: 30px"><i class="fa fa-facebook fa-2x"></i></a></li>
-              <li><a href="https://twitter.com/PennAppsFellows" style="margin-right: 30px"><i class="fa fa-twitter fa-2x"></i></a></li>
-              <li><a href="mailto:hello@pennappsfellows.com" style="margin-right: 30px"><i class="fa fa-envelope fa-2x"></i></a></li>
-            </ul>
-            <hr>
-            <p style = "font-weight: 100; font-size: 27px">Copyright &copy; PennApps Fellows 2014</p>
+              <div class="small-4 columns">
+                  <img src="img/companies/picwell.png"></img>
+              </div>
+              <div class="small-4 columns">
+                  <img src="img/companies/viridity.svg"></img>
+              </div>
+              <div class="small-4 columns">
+                  <img src="img/companies/savana.png"></img>
+              </div>
           </div>
-        </div>
+          <br>
+          <div class="row">
+              <div class="small-4 columns">
+                  <img src="img/companies/neat.png"></img>
+              </div>
+              <div class="small-4 columns">
+                  <img src="img/companies/monetate.png"></img>
+              </div>
+              <div class="small-4 columns">
+                  <img src="img/companies/artisan.png"></img>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="small-4 columns">
+                  <img src="img/companies/socialie.png"></img>
+              </div>
+              <div class="small-4 columns">
+                  <img src="img/companies/ticketleap.png"></img>
+              </div>
+              <div class="small-4 columns">
+                  <img src="img/companies/arcweb.png"></img>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="small-4 large-2 large-offset-3 columns">
+                  <img src="img/companies/zivtech.png"></img>
+              </div>
+              <div class="small-4 large-2 columns">
+                  <img src="img/companies/soceana.png"></img>
+              </div>
+              <div class="small-4 large-2 end columns">
+                  <img src="img/companies/50onRed.png"></img>
+              </div>
+          </div>
       </div>
-    </footer>
-    <!-- /Footer -->
 
+      <!-- Medium-up -->
+      <div class="show-for-medium-up panel">
+          <div class="row">
+              <div class="medium-2 columns">
+                  <img src="img/companies/curalate.png"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/guru.png"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/point.io.png"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/picwell.png"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/viridity.svg"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/savana.png"></img>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="medium-2 columns">
+                  <img src="img/companies/neat.png"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/monetate.png"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/artisan.png"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/socialie.png"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/ticketleap.png"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/arcweb.png"></img>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="medium-2 large-offset-3 columns">
+                  <img src="img/companies/zivtech.png"></img>
+              </div>
+              <div class="medium-2 columns">
+                  <img src="img/companies/soceana.png"></img>
+              </div>
+              <div class="medium-2 end columns">
+                  <img src="img/companies/50onRed.png"></img>
+              </div>
+          </div>
+      </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="media/js/jquery.js"></script>
-    <script type="text/javascript" src="media/js/bootstrap.js"></script>
+      <!-- Application Process -->
+      <hr>
 
-    <!-- Google Forms -->
-    <script type="text/javascript" src="media/js/google-forms.js"></script>
+      <div id="apply" class="wide-header">
+          <div class="large-12 columns color-header">
+              <h2 class="text-center" style="color: white;">Application Process</h2>
+          </div>
+      </div>
 
-    <!-- Google Analytics -->
-    <script type="text/javascript" src="media/js/google-analytics.js"></script>
+      <br>
+      <br>
+      <br>
 
-    <!-- Smooth Scrolling Page Button -->
-    <script type="text/javascript" src="media/js/smooth-scroll.js"></script>
+      <div class="row">
+          <div class="small-10 small-centered columns text-center panel">
+              <!-- <a href="#" class="button success radius">Fellowship Application</a> -->
+              <p>Applications not open at this time.</p>
+              <p>Follow <a href="https://twitter.com/pennappsfellows">@pennappsfellows</a> on Twitter for updates.</p>
+          </div>
+      </div>
+
+      <div class="row small-uncollapse large-uncollapse" data-equalizer>
+          <div class="small-12 large-3 columns">
+              <h5 class="subheader text-center">Applications Open</h5>
+              <p class="text-center" style="font-size: 12px; margin-bottom: .5rem;">December 1st</p>
+              <p class="text-center panel" style="line-height: normal;" data-equalizer-watch>Show us what you've got! </p>
+          </div>
+          <div class="small-12 large-3 columns">
+              <h5 class="subheader text-center">Second Round Decisions</h5>
+              <p class="text-center" style="font-size: 12px; margin-bottom: .5rem;">February 4th</p>
+              <p class="text-center panel" style="line-height: normal;" data-equalizer-watch>We carefully review all applicants and choose who moves onto the second round.</p>
+          </div>
+          <div class="small-12 large-3 columns">
+              <h5 class="subheader text-center">Company Decisions</h5>
+              <p class="text-center" style="font-size: 12px; margin-bottom: .5rem;">March 4th</p>
+              <p class="text-center panel" style="line-height: normal;" data-equalizer-watch>Following interviews with the tech companies, the Fellows Class of 2016 will be announced.</p>
+          </div>
+          <div class="small-12 large-3 end columns">
+              <h5 class="subheader text-center">Program Runs</h5>
+              <p class="text-center" style="font-size: 12px; margin-bottom: .5rem;">June 3th - August 7th</p>
+              <p class="text-center panel" style="line-height: normal;" data-equalizer-watch>Fellows move in and start working!</p>
+          </div>
+      </div>
+
+      <!-- History -->
+      <hr>
+
+      <div id="history" class="wide-header">
+          <div class="small-12 columns color-header">
+              <h2 class="text-center" style="color: white;">Our History</h2>
+          </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div class="row">
+          <div class="small-12 columns">
+              <h3 class="subheader text-center" style="text-decoration: underline;">What Past Fellows Have to Say</h3>
+          </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+          <div class="large-4 columns show-for-large-up">
+              <!-- <h5 class="subheader text-center">Caroline</h5> -->
+              <img src="img/user-stories/caroline.jpeg"></img>
+              <blockquote style="line-height: normal;">"Every PennApps is like a family reunion to look forward to. The PennApps Fellows experience was a super cool way to meet other like-minded people in tech and learn a ton through an internship in the process!"<cite>Caroline</cite></blockquote>
+          </div>
+          <div class="large-4 small-6 columns">
+              <!-- <h5 class="subheader text-center">Krish</h5> -->
+              <img src="img/user-stories/krish.jpeg"></img>
+              <blockquote style="line-height: normal;">"I’d say the biggest value proposition was the people. Whether it be the coordinators of the program, the other fellows, the coworkers, or the supportive Philly tech community, I was able to mature technically and personally in ways that are very hard in other contexts."<cite>Krish</cite></blockquote>
+          </div>
+          <!-- <div class="large-3 small-6 columns">
+              <h5 class="subheader text-center">Cole</h5>
+              <img src="img/user-stories/cole.jpeg"></img>
+              <p class="text-center" style="line-height: normal;">“I was introduced to a whole new city with a vibrant, growing tech scene. Even better, I got to explore it with the other Fellows, who are some of the most talented people I’ve met."</p>
+          </div> -->
+          <div class="large-4 small-6 columns">
+              <!-- <h5 class="subheader text-center">Christina</h5> -->
+              <img src="img/user-stories/christina.jpeg"></img>
+              <blockquote style="line-height: normal;">"This summer I learned what it was like firsthand to work at a startup while making lifelong friends, and I really couldn't ask for anything more."<cite>Christina</cite></blockquote>
+          </div>
+      </div>
+
+      <div class="row show-for-medium-up">
+          <div class="large-12 columns">
+              <h3 class="subheader text-center" style="text-decoration: underline;">Company Timeline</h3>
+              <br>
+              <ul class="accordion" data-accordion style="border: 4px solid #61B136; border-radius: 5px;">
+                  <li class="accordion-navigation">
+                    <a href="#panel1a">2014</a>
+                    <div id="panel1a" class="content active">
+                      <p>PennApps Fellows was founded by Fabio, Ascanio and Sean because we saw many of our peers going to internships in SF or NYC even though we saw so many awesome startups right here in Philly.</p>
+                      <p>Here's what others had to say:</p>
+                      <a href="http://technical.ly/philly/2014/03/20/call-for-ideas-city-philadelphia-grants/">Technically Philly</a><br>
+                      <a href="http://www.bizjournals.com/philadelphia/news/2014/03/21/the-students-to-startups-connection-thanks-to-the.html">Philadelphia Business Journal</a><br>
+                      <a href="http://www.thedp.com/article/2014/03/pennapps-fellows-receive-grant">The Daily Pennsylvanian</a><br>
+                      <!-- <a href="">Technically Philly - </a><br> -->
+                    </div>
+                  </li>
+                  <li class="accordion-navigation">
+                    <a href="#panel2a">2015</a>
+                    <div id="panel2a" class="content">
+                      <p>In our second year we grew a ton: we went from 160 to 423 applicants, 8 to 14 Fellows, and have added a ton of fabulous team members. You can also check out our "Meet the Fellows 2015" medium post <a href="https://medium.com/pennapps-fellows/meet-the-pennapps-fellows-2015-2bc7e46cd256">here</a>. </p>
+                    </div>
+                  </li>
+                  <li class="accordion-navigation">
+                    <a href="#panel3a">2016</a>
+                    <div id="panel3a" class="content">
+                      <p>Now, we are looking to involve more companies and students than ever before. Will you join us?</p>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+
+      <!-- Sponsors -->
+      <hr>
+
+      <div id="sponsors" class="wide-header">
+          <div class="large-12 columns color-header">
+              <h2 class="text-center" style="color: white;">Our Wonderful Sponsors</h2>
+          </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="row">
+          <div class="small-6 columns text-center">
+              <a href="http://www.startupphl.com/"><img src="img/sponsors/startupPHL.png"></img></a>
+          </div>
+          <div class="small-6 columns text-center">
+              <a href="http://my.xfinity.com/"><img src="img/sponsors/comcast.png"></img></a>
+          </div>
+      </div>
+
+      <br />
+      <br />
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
     <script>
-      var navbarHidden = false;
-      function updateNavbar() {
-        if(navbarHidden && window.scrollY > 200) {
-          $(".navbar").animate({'margin-top': "0px"}, 500);
-          navbarHidden = false;
-        } else if(!navbarHidden && window.scrollY <= 200) {
-          $(".navbar").animate({'margin-top': "-90px"}, 500);
-          navbarHidden = true;
-        }
-      }
-      $(window).scroll(updateNavbar);
-      updateNavbar();
+      $(document).foundation();
     </script>
   </body>
-
 </html>
