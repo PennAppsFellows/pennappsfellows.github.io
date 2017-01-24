@@ -49,8 +49,8 @@ body {
   vertical-align: top;
 }
 .cover-container {
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
 /* Padding for spacing */
@@ -185,4 +185,36 @@ body {
 
 #companies {
   padding-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mosaic td{
+  padding: 10px;
+}
+
+.mosaic img {
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
+
+#sponsors {
+  padding-top: 170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sponsorship img {
+  display: block;
+  max-height:450px;
+  max-width: 500px;
+  width: auto;
+  height: auto;
+}
+
+.sponsorship td{
+  padding: 30px;
 }
