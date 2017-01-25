@@ -14,9 +14,10 @@ a:hover {
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: 0 15px 30px rgba(0,0,0,.5); /* Prevent inheritance from `body` */
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #000000;
+  font-weight: bold;
 }
 
 
@@ -27,12 +28,13 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
+  text-rendering: auto;
+  font-weight: 1000;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-shadow: 0 15px 30px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -109,13 +111,6 @@ body {
  * Cover
  */
 
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
 
 
 /*
@@ -156,9 +151,14 @@ body {
 
 @media (min-width: 992px) {
   .masthead,
-  .mastfoot,
+  .mastfoot {
+    width: 50%;
+    left: 25%;}
   .cover-container {
-    width: 700px;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: -400;
+    width: 100%;
   }
 }
 
@@ -172,10 +172,21 @@ body {
 }
 
 .centerblurb {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
+
+}
+
+#apply {
+  background-size: cover;
 }
 
 #about {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 120px;
 }
 
@@ -184,7 +195,7 @@ body {
 }
 
 #companies {
-  padding-top: 150px;
+  padding-top: 100px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -202,7 +213,7 @@ body {
 }
 
 #sponsors {
-  padding-top: 170px;
+  padding-top: 80px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -216,5 +227,47 @@ body {
 }
 
 .sponsorship td{
-  padding: 30px;
+  padding: 40px;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url("img/phil.png") center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
 }

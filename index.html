@@ -20,47 +20,46 @@
 
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
-    <script>
-        $(function() {
-            $('a[href*=#]').on('click', function(e) {
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $($(this).attr('href')).offset().top
-                }, 500, 'linear');
-            });
-        });
-    </script>
+
 </head>
 
 <body>
-    <div class="backgroundphil">
-        <img src="img/background3.jpg" width="100%"></img>
+
+
+    <div class="fullscreen-bg">
+        <video loop="loop" autoplay="auto" class="fullscreen-bg__video">
+            <source src="img/philly1.mp4" type="video/mp4">
+    </video>
     </div>
+
     <div class="site-wrapper">
         <div class="site-wrapper-inner">
             <div class="cover-container">
 
-                <div class="masthead clearfix">
+                <div class="masthead">
                     <div class="inner">
-                        <h3 class="masthead-brand"><a href="#">PennApps Fellowss</a></h3>
+                        <h3 class="masthead-brand"><a href="#">PennApps Fellows</a></h3>
                         <nav>
                             <ul class="nav masthead-nav">
+                            <li><a href="https://pennappsfellows.typeform.com/to/oJGjaa">Apply</a></li>
                                 <li><a href="#about">About</a></li>
-                                <li><a href="#apply">Apply</a></li>
-                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeUia4WOpq7G9NM8-NzE7Geajp8FpwJM3cq-EXsT6uP58yvEw/viewform">Companies</a></li>
+                                <li><a href="#companies">Companies</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
 
+
                 <div id="apply" class="inner-cover">
                     <div class="centerblurb">
+
                         <h1 class="cover-heading">Welcome!</h1>
                         <p class="lead">PennApps Fellows is a 10 week summer internship for students who want to explore and get to know the Philadelphia tech scene.</p>
-                        <p class="lead">Applications Close February 1st.</p>
+                        <p class="lead">Applications for Summer 2017 Close February 1st.</p>
                         <p class="lead">
                             <a href="https://pennappsfellows.typeform.com/to/oJGjaa" class="btn btn-lg btn-default">Apply Now!</a>
                         </p>
+
                     </div>
                 </div>
 
@@ -73,11 +72,15 @@
                         <p id="abtblurb" class="lead">We find the best local startups and work carefully to match them with hackers with the right skillset so you get the most out of your paid internship.</p>
                         <p id="abtblurb" class="lead">While you'll be busy at your internships during the day, we'll also host Fellows events, dinners and talks for you to explore Philadelphia and get to know your peers better.</p>
                 </div>
-            </div>
+
 
             <div id="companies" class="inner-cover">
-                <h1 class="cover-heading">Past company partners</h1>
+                <h1 class="cover-heading">Some of our past company partners</h1>
                 <br></br>
+                <p class="lead">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUia4WOpq7G9NM8-NzE7Geajp8FpwJM3cq-EXsT6uP58yvEw/viewform" class="btn btn-lg btn-default">Host a Fellow!</a>
+                </p>
+                  <br></br>
                 <div class="mosaic">
                     <table class="boardof" align="center">
                         <tr>
@@ -161,16 +164,13 @@
                 </table>
             </div>
 
-            <div class="cover-container">
-
+  </div>
                 <div class="mastfoot">
                     <div class="inner">
                         Questions? <a href="mailto:rjaggi@seas.upenn.edu">Contact Us!</a>
                     </div>
                 </div>
 
-
-            </div>
 
         </div>
     </div>
