@@ -156,7 +156,7 @@ body {
     left: 25%;}
   .cover-container {
     background-color: #000000;
-    opacity: 0.6;
+    opacity: 0.5;
     z-index: -400;
     width: 100%;
   }
@@ -264,7 +264,7 @@ body {
 
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url("img/phil.png") center center / cover no-repeat;
+    background: url("img/background3.jpg") center center / cover no-repeat;
   }
 
   .fullscreen-bg__video {
