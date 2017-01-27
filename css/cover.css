@@ -259,15 +259,21 @@ body {
   .fullscreen-bg__video {
     width: 300%;
     left: -100%;
-  }
+
 }
 
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url("img/background3.jpg") center center / cover no-repeat;
+    background: url("img/background3.jpg");
   }
 
   .fullscreen-bg__video {
     display: none;
+  }
+}
+
+@@media (max-device-width:480px) {
+  .site-wrapper{
+    background-color: #000000;
   }
 }
