@@ -154,12 +154,14 @@ body {
   .mastfoot {
     width: 50%;
     left: 25%;}
-  .cover-container {
-    background-color: #000000;
-    opacity: 0.5;
-    z-index: -400;
-    width: 100%;
-  }
+
+}
+
+.cover-container {
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: -400;
+  width: 100%;
 }
 
 .backgroundphil {
@@ -272,8 +274,9 @@ body {
   }
 }
 
+
 @@media (max-device-width:480px) {
   .site-wrapper{
-    background-color: #000000;
+    background-color: black;
   }
 }
