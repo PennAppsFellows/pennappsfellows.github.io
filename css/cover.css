@@ -165,12 +165,9 @@ body {
 }
 
 @media (max-device-width: 480px) {
-  .cover-container {
-    background-color: green;
-    opacity: 0.5;
-    z-index: -400;
-    width: 100%;
-  }
+    .site-wrapper {
+      width: 480px;
+    }
 	}
 
 .backgroundphil {
